@@ -15,6 +15,13 @@ th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;}
 th{background:#f2efe9;font-weight:600;white-space:nowrap;}
 td img,th img{max-height:88px;max-width:130px;width:auto;height:auto;border-radius:4px;margin:2px;}
 td img.big,p img.big{max-height:150px;max-width:230px;}
+img{cursor:zoom-in;}
+.image-lightbox{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(0,0,0,.86);}
+.image-lightbox.open{display:flex;}
+.image-lightbox img{max-width:96vw;max-height:92vh;width:auto;height:auto;border-radius:6px;box-shadow:0 18px 50px rgba(0,0,0,.5);cursor:zoom-out;}
+.image-lightbox button{position:absolute;top:14px;right:16px;width:40px;height:40px;border:1px solid rgba(255,255,255,.5);border-radius:999px;background:rgba(0,0,0,.35);color:#fff;font-size:26px;line-height:1;cursor:pointer;}
+.image-lightbox button:hover{background:rgba(255,255,255,.16);}
+.lightbox-open{overflow:hidden;}
 ul,ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
 code{background:#f0f1ee;padding:1px 5px;border-radius:3px;font-size:90%;}
 hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
@@ -415,7 +422,7 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>上午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Meiji+Jingu+Tokyo">明治神宫</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Meiji_Shrine_in_Tokyo_%283459511468%29.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/places-原宿-表参道-青山-meiji-jingu-明治神宫.jpg"></td>
 <td>从安静的神社森林开始，顺路接原宿。</td>
 </tr>
 <tr>
@@ -481,19 +488,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>晚上行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Scramble+Crossing">Shibuya Scramble Crossing</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/miyashita-park.jpg"></td>
 <td>涩谷必去。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Sky">Shibuya Sky</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya_Scramble_Square_-_SHIBUYA_SKY_4.jpg?width=480"></td>
+<td><img class="big" src="assets/googlemaps/roppongi-hills-city-view.jpg"></td>
 <td>建议提前订黄昏或夜景时段。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+PARCO">Shibuya PARCO</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shibuya_Parco_Part1.jpg?width=480"></td>
+<td><img class="big" src="assets/googlemaps/miyashita-park.jpg"></td>
 <td>晚上顺手补购物和动漫 / 设计店。</td>
 </tr>
 <tr>
@@ -530,19 +537,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>上午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Ueno+Park+Tokyo">上野公园</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shinobazu_Pond_%40_Ueno_Park_%2814038522201%29.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/places-上野-uenokoen-上野公园.jpg"></td>
 <td>如果想加博物馆，这里最顺。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Ameyoko+Shopping+District+Tokyo">阿美横商店街</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ameya-Yokocho%2C_Ueno.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/places-上野-uenokoen-上野公园.jpg"></td>
 <td>上野到御徒町之间，适合边走边看。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+National+Museum">东京国立博物馆，可选</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_National_Museum%2C_Honkan_2010.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/mori-art-museum.jpg"></td>
 <td>如果想加历史文化，就从这里替换一部分购物时间。</td>
 </tr>
 <tr>
@@ -554,13 +561,13 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>下午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Akihabara+Electric+Town">秋叶原 Electric Town</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png?width=640"></td>
+<td><img class="big" src="assets/googlemaps/super-potato-akihabara.jpg"></td>
 <td>必去区域。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yodobashi+Camera+Multimedia+Akiba">Yodobashi Camera Multimedia Akiba</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Yodobashi-Akiba_2019.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/mandarake-complex-akihabara.jpg"></td>
 <td>电器、相机、玩具、游戏都集中。</td>
 </tr>
 <tr>
@@ -590,7 +597,7 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>晚上行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kanda+Station+Tokyo">秋叶原夜景 / 神田散步</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sotokanda%2C_Akihabara_Electric_Town_at_night_20231114.png?width=640"></td>
+<td><img class="big" src="assets/googlemaps/super-potato-akihabara.jpg"></td>
 <td>晚上不建议再跨区。</td>
 </tr>
 <tr>
@@ -625,19 +632,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>上午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Senso-ji+Tokyo">浅草寺</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Sensoji_Temple_%2840909716384%29.jpg?width=640"></td>
+<td><img class="big" src="assets/food/sometaro-asakusa-01.jpg"></td>
 <td>东京最有代表性的寺院之一。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kaminarimon+Gate+Tokyo">雷门</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kaminarimon_Asakusa_Tokyo.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/amanda-淺草-江戸料理-櫻田.jpg"></td>
 <td>浅草经典入口。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Nakamise-dori+Street+Tokyo">仲见世通</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Nakamise-dori%2C_Asakusa%2C_Tokyo.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/amanda-淺草-chinya-すき焼-ちんや-浅草本店.jpg"></td>
 <td>小吃和纪念品街。</td>
 </tr>
 <tr>
@@ -649,25 +656,25 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>下午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Skytree">东京 Skytree</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_Skytree_2014_%E2%85%A2.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/amanda-墨田區-押上-向島-京島-東京スカイツリー.jpg"></td>
 <td>浅草过河就能接上。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Tokyo">银座</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ginza_at_night%2C_Tokyo_JP.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/ginza-six.jpg"></td>
 <td>从 Skytree / 浅草转到银座做购物。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Six">Ginza Six</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ginza_Six_2017.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/ginza-six.jpg"></td>
 <td>品牌和美食都集中。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Itoya+Ginza">Itoya Ginza</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Ginza_Itoya.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/ginza-itoya.jpg"></td>
 <td>文具店，非常适合顺路逛。</td>
 </tr>
 <tr>
@@ -697,7 +704,7 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>晚上行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Station+Marunouchi">东京站 / 丸之内夜景</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_Station_Marunouchi_Building_2012.JPG?width=640"></td>
+<td><img class="big" src="assets/food/rokurinsha-tokyo-station-01.jpg"></td>
 <td>晚餐后轻松走。</td>
 </tr>
 <tr>
@@ -748,7 +755,7 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Odawara+Station">品川 / 东京 -&gt; 小田原</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Odawara_Station_2020.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/hakone-yumoto-station.jpg"></td>
 <td>从品川出发接新干线或 JR / 小田急。</td>
 </tr>
 <tr>
@@ -766,19 +773,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>下午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Lake+Ashi+Hakone">芦之湖</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Lake_Ashi_%40_Hakone_%2813776547923%29.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/amanda-箱根-箱根芦ノ湖遊覧船-元箱根港.jpg"></td>
 <td>箱根核心自然景观。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Hakone+Shrine">箱根神社</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hakone_Shrine_from_Lake_Ashi%2C_May_2017.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/amanda-箱根-箱根海賊船-元箱根港.jpg"></td>
 <td>必补景点；湖边鸟居是箱根最经典画面。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Motohakone-ko+Pier+Hakone">箱根海盗船 / 元箱根港，可选</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hakone_Sightseeing_Cruise_02.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/amanda-箱根-箱根海賊船-元箱根港.jpg"></td>
 <td>如果天气好、时间够，再加船。</td>
 </tr>
 <tr>
@@ -875,7 +882,7 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>晚上行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Scramble+Crossing">涩谷低强度散步</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/miyashita-park.jpg"></td>
 <td>箱根回东京后不要塞太硬。</td>
 </tr>
 <tr>
@@ -910,19 +917,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>上午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kamakura+Station">涩谷 -&gt; 镰仓</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kamakura_Station_East_Exit_2020.jpg?width=640"></td>
+<td><img class="big" src="assets/food/kamakura-matsubara-an-01.jpg"></td>
 <td>从涩谷出发相对顺。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsurugaoka+Hachimangu">鹤冈八幡宫 Tsurugaoka Hachimangu</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Tsurugaoka-hachimangu_Kamakura.jpg?width=640"></td>
+<td><img class="big" src="assets/food/kamakura-matsubara-an-02.jpg"></td>
 <td>必去；和源氏、镰仓幕府历史关联很深。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Komachi-dori+Street+Kamakura">小町通</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Komachi-dori_Kamakura.jpg?width=640"></td>
+<td><img class="big" src="assets/food/caraway-kamakura-01.jpg"></td>
 <td>鹤冈八幡宫出来顺路逛。</td>
 </tr>
 <tr>
@@ -940,19 +947,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>下午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kotoku-in+Great+Buddha+of+Kamakura">镰仓大佛 / 高德院</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/The_Great_Buddha_of_Kamakura.jpg?width=640"></td>
+<td><img class="big" src="assets/food/kamakura-matsubara-an-03.jpg"></td>
 <td>镰仓代表性景点。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Hasedera+Temple+Kamakura">长谷寺</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Hasedera_Temple_Kamakura_2014.jpg?width=640"></td>
+<td><img class="big" src="assets/food/kamakura-matsubara-an-04.jpg"></td>
 <td>和大佛同一带，顺路。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Enoshima">江之岛，可选</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Enoshima_Island_2016.jpg?width=640"></td>
+<td><img class="big" src="assets/food/caraway-kamakura-02.jpg"></td>
 <td>如果体力不足就取消，把时间留给横滨晚餐。</td>
 </tr>
 <tr>
@@ -970,13 +977,13 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>晚上行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Minato+Mirai+21+Yokohama">Minato Mirai 夜景</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Minato_Mirai_21_at_night.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/amanda-橫濱-櫻木町站-橫濱空中纜車.jpg"></td>
 <td>镰仓 + 横滨同日偏紧，所以横滨只做晚餐和夜景。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Red+Brick+Warehouse">横滨红砖仓库，可选</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Yokohama_Red_Brick_Warehouse_2012.JPG?width=480"></td>
+<td><img class="big" src="assets/recommendations/amanda-橫濱-横浜赤レンカ-倉庫.jpg"></td>
 <td>如果吃完还有体力。</td>
 </tr>
 <tr>
@@ -1007,19 +1014,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td>上午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Expressway+Bus+Terminal">天气好：新宿高速巴士总站 -&gt; 河口湖站</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shinjuku_Expressway_Bus_Terminal_2016.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/newoman-shinjuku.jpg"></td>
 <td>河口湖一日游建议看天气决定。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kawaguchiko+Station">河口湖站</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kawaguchiko_Station_2018.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/lake-kawaguchi.jpg"></td>
 <td>富士山日的交通中心。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=teamLab+Planets+TOKYO">天气差备选：teamLab Planets</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/At_teamLab_Planets_%2848277798316%29.jpg?width=480"></td>
+<td><img class="big" src="assets/recommendations/places-六本木-麻布台-东京塔-teamlab-borderless.jpg"></td>
 <td>如果云层厚，不硬去富士山。</td>
 </tr>
 <tr>
@@ -1049,19 +1056,19 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Mt.+Fuji+Panoramic+Ropeway">富士山全景缆车</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Kachi_Kachi_Ropeway_2019.jpg?width=640"></td>
+<td><img class="big" src="assets/googlemaps/lake-kawaguchi.jpg"></td>
 <td>天气好才值得排。</td>
 </tr>
 <tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Chureito+Pagoda">忠灵塔，可选</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Chureito_Pagoda_and_Mount_Fuji_20241022.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/places-富士-河口湖-mount-fuji-tenku-no-torii-天空鸟居.jpg"></td>
 <td>如果时间够，最经典富士山构图之一。</td>
 </tr>
 <tr>
 <td>晚餐</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Station">新宿轻松晚餐</a></td>
-<td><img class="big" src="https://commons.wikimedia.org/wiki/Special:FilePath/Shinjuku_Station_East_Exit_2019.jpg?width=640"></td>
+<td><img class="big" src="assets/recommendations/places-新宿-shinjuku-station-新宿站.jpg"></td>
 <td>河口湖回来后不要安排硬餐。</td>
 </tr>
 <tr>
@@ -3725,4 +3732,51 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 </tr>
 </tbody>
 </table></div>
-<p>历史结论：如果能用 ANA miles 换到 United partner award，理论经济舱价格会是 <code>100k miles / 2 人 + 税费</code>，但这不代表一定有票，需要登录 ANA 或 point.me 查 availability。</p></div></body></html>
+<p>历史结论：如果能用 ANA miles 换到 United partner award，理论经济舱价格会是 <code>100k miles / 2 人 + 税费</code>，但这不代表一定有票，需要登录 ANA 或 point.me 查 availability。</p></div><script>
+(() => {
+  const lightbox = document.createElement("div");
+  lightbox.className = "image-lightbox";
+  lightbox.setAttribute("role", "dialog");
+  lightbox.setAttribute("aria-modal", "true");
+  lightbox.setAttribute("aria-label", "放大图片");
+
+  const closeButton = document.createElement("button");
+  closeButton.type = "button";
+  closeButton.setAttribute("aria-label", "关闭放大图片");
+  closeButton.textContent = "×";
+
+  const zoomedImage = document.createElement("img");
+  lightbox.append(closeButton, zoomedImage);
+  document.body.append(lightbox);
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("open");
+    document.body.classList.remove("lightbox-open");
+    zoomedImage.removeAttribute("src");
+    zoomedImage.removeAttribute("alt");
+  };
+
+  document.addEventListener("click", event => {
+    const image = event.target.closest("img");
+    if (!image || lightbox.contains(image)) return;
+
+    event.preventDefault();
+    zoomedImage.src = image.currentSrc || image.src;
+    zoomedImage.alt = image.alt || "";
+    lightbox.classList.add("open");
+    document.body.classList.add("lightbox-open");
+    closeButton.focus();
+  });
+
+  lightbox.addEventListener("click", event => {
+    if (event.target === lightbox || event.target === zoomedImage) closeLightbox();
+  });
+
+  closeButton.addEventListener("click", closeLightbox);
+  zoomedImage.addEventListener("error", closeLightbox);
+
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+  });
+})();
+</script></body></html>
