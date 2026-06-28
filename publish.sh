@@ -73,7 +73,7 @@ h3{font-size:17px;margin-top:24px;color:#1f3a5f;} h4{font-size:15px;margin-top:1
 a{color:var(--blue);text-decoration:none;} a:hover{text-decoration:underline;}
 blockquote{border-left:4px solid var(--accent);margin:12px 0;padding:6px 14px;background:#faf6f5;color:#444;}
 .tw{overflow-x:auto;margin:14px 0;-webkit-overflow-scrolling:touch;}
-table{border-collapse:collapse;width:100%;font-size:13px;}
+table{border-collapse:collapse;min-width:600px;font-size:13px;}
 th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;}
 th{background:#f2efe9;font-weight:600;white-space:nowrap;}
 td img,th img{max-height:88px;max-width:130px;width:auto;height:auto;border-radius:4px;margin:2px;}
