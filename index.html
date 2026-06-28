@@ -13,6 +13,8 @@ blockquote{border-left:4px solid var(--accent);margin:12px 0;padding:6px 14px;ba
 table{border-collapse:collapse;min-width:600px;font-size:13px;}
 th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;}
 th{background:#f2efe9;font-weight:600;white-space:nowrap;}
+td:first-child{white-space:nowrap;}
+td.merged{text-align:center;vertical-align:middle;}
 td img,th img{max-height:88px;max-width:130px;width:auto;height:auto;border-radius:4px;margin:2px;}
 td img.big,p img.big{max-height:150px;max-width:230px;}
 img{cursor:zoom-in;}
@@ -3693,6 +3695,31 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
 
   document.addEventListener("keydown", event => {
     if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+  });
+})();
+
+(() => {
+  // 把第一列连续的空格子合并到上一个非空格子(同一 section 的子行程),并居中
+  document.querySelectorAll(".tw table").forEach(table => {
+    const body = table.tBodies[0];
+    if (!body) return;
+    let anchor = null;
+    Array.from(body.rows).forEach(row => {
+      const cell = row.cells[0];
+      if (!cell) return;
+      if (cell.textContent.trim() === "" && !cell.querySelector("img")) {
+        if (anchor) {
+          anchor.rowSpan = (anchor.rowSpan || 1) + 1;
+          cell.remove();
+        }
+      } else {
+        anchor = cell;
+      }
+    });
+    Array.from(body.rows).forEach(row => {
+      const cell = row.cells[0];
+      if (cell && cell.rowSpan > 1) cell.classList.add("merged");
+    });
   });
 })();
 </script></body></html>

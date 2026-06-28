@@ -76,6 +76,8 @@ blockquote{border-left:4px solid var(--accent);margin:12px 0;padding:6px 14px;ba
 table{border-collapse:collapse;min-width:600px;font-size:13px;}
 th,td{border:1px solid var(--line);padding:7px 9px;vertical-align:top;}
 th{background:#f2efe9;font-weight:600;white-space:nowrap;}
+td:first-child{white-space:nowrap;}
+td.merged{text-align:center;vertical-align:middle;}
 td img,th img{max-height:88px;max-width:130px;width:auto;height:auto;border-radius:4px;margin:2px;}
 td img.big,p img.big{max-height:150px;max-width:230px;}
 ul,ol{margin:8px 0 8px 22px;} li{margin:4px 0;}
