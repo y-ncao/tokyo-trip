@@ -1739,7 +1739,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <h2 id="5">5. 必吃榜</h2>
 <p>查询口径：按这次目的地筛选 local Japanese food / city-local food，优先选择 Google Maps 评分约 <code>4.1+</code>、评论数约 <code>1k+</code> 的店。评分和评论数会变化，下面作为 2026-06-07 的 planning snapshot，出发前用 Google Maps 再复核营业时间、排队和预约。价格按单人一餐估算，日元转美元按 <code>1 USD ~= 160 JPY</code> 粗略换算；图片来自对应餐厅 Google Maps 照片 / review photo assets；表格中限制显示尺寸，图片源使用较大尺寸，方便点开放大查看。已尽量排除头像、街景和环境图，但 Google Maps 不提供稳定的“只导出食物照片”公开接口，出发前建议点开照片页复核。</p>
 <h3 id="confirmed-meals-reservations">本次已塞入行程的餐厅与预约方式</h3>
-<p>这张表只看已经放进每日行程的午餐 / 晚餐。营业时间、放位和预约规则会变，出发前再逐项复核一次。</p>
+<p>这张表是本次餐饮安排的 source of truth：已确定、暂定、现场二选一和明确备选都放在这里。每日行程里的餐饮文字暂时只作为上下文；是否需要预约、是否还要补平价备选，以这张表为准。营业时间、放位和预约规则会变，出发前再逐项复核一次。</p>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -1747,6 +1747,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <th>餐次</th>
 <th>餐厅</th>
 <th>吃什么</th>
+<th>状态</th>
 <th>预约判断</th>
 <th>预约 / 官网链接</th>
 <th>备注</th>
@@ -1754,10 +1755,21 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </thead>
 <tbody>
 <tr>
+<td><code>7/3</code></td>
+<td>晚餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsubame+Grill+Shinagawa">Tsubame Grill Shinagawa</a></td>
+<td>汉堡排 / 洋食</td>
+<td><span class="tag opt">optional</span><span class="tag quick">快进快出</span></td>
+<td><span class="tag walk">Walk-in</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsubame+Grill+Shinagawa">Google Maps</a></td>
+<td>落地日只作为品川附近低压力选项；排队长就酒店附近解决。</td>
+</tr>
+<tr>
 <td><code>7/4</code></td>
 <td>午餐</td>
 <td><a href="https://maps.app.goo.gl/qrmsgBdxcoav6HQW8">ごはんや一芯 代官山</a></td>
 <td>日式米饭定食 / 家常和食</td>
+<td><span class="tag mustgo">已确定</span></td>
 <td><span class="tag walk">Walk-in</span>午餐不可预约</td>
 <td><a href="https://g775402.gorp.jp/">Gurunavi 店铺页</a></td>
 <td>午餐卖完为止；建议 11:30 附近去，别拖到太晚。</td>
@@ -1767,6 +1779,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>晚餐</td>
 <td><a href="https://maps.app.goo.gl/rEJtP3vTVjNYCe9K8">とんかつまい泉 青山本店</a></td>
 <td>老牌炸猪排</td>
+<td><span class="tag mustgo">已确定</span></td>
 <td><span class="tag walk">Walk-in</span>普通座位以现场为主</td>
 <td><a href="https://mai-sen.com/restaurant/aoyama/">官方店铺页</a></td>
 <td>青山本店顺路；周末可能排队。宴会 / 包间类才更适合提前沟通。</td>
@@ -1776,42 +1789,167 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>晚餐备选</td>
 <td><a href="https://maps.app.goo.gl/FZvvLxUD9hd1TgXL8">鶏だしおでん さもん 中目黒店</a></td>
 <td>鸡汤关东煮 / 居酒屋</td>
+<td><span class="tag opt">备选</span></td>
 <td><span class="tag walk">Walk-in</span>现场排队为主</td>
 <td><a href="https://tabelog.com/tokyo/A1317/A131701/13217687/">Tabelog 店铺页</a></td>
 <td>如果不想吃炸猪排，这家更轻；当天上午/中午本来经过中目黑，晚上从青山回中目黑也不绕。</td>
+</tr>
+<tr>
+<td><code>7/5</code></td>
+<td>午餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsujihan+Nihonbashi">Tsujihan Nihonbashi</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Rojiura+Curry+SAMURAI.+Kichijoji">Rojiura Curry SAMURAI. Kichijoji</a></td>
+<td>海鲜丼 / 汤咖喱</td>
+<td><span class="tag opt">现场二选一</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsujihan+Nihonbashi">Tsujihan</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Rojiura+Curry+SAMURAI.+Kichijoji">SAMURAI.</a></td>
+<td>主线是从吉祥寺回日本桥吃 Tsujihan；如果吉祥寺逛得舒服，就地吃 SAMURAI.，不要为了午餐硬折返。</td>
+</tr>
+<tr>
+<td><code>7/5</code></td>
+<td>晚餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kikanbo+Kanda">Kikanbo Kanda</a></td>
+<td>辛味噌拉面</td>
+<td><span class="tag mustgo">已确定</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kikanbo+Kanda">Google Maps</a></td>
+<td>7/5 晚餐的 source of truth；秋叶原 / 神田收尾最顺，排队太长就改神田附近拉面或定食。</td>
+</tr>
+<tr>
+<td><code>7/6</code></td>
+<td>早餐</td>
+<td>筑地市场小吃线</td>
+<td>烤鮪魚串 / 饭团 / 抹茶 / 海鲜小吃</td>
+<td><span class="tag mustgo">已确定</span><span class="tag deep">可认真逛</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsukiji+Outer+Market">筑地市场</a></td>
+<td>早餐主线；两人分食，按队伍取舍，不为了单店排太久。</td>
 </tr>
 <tr>
 <td><code>7/6</code></td>
 <td>午餐</td>
 <td><a href="https://maps.app.goo.gl/hw3M6myCDFjWVCAm6">Chinya すき焼 ちんや 浅草本店</a></td>
 <td>浅草老牌寿喜烧</td>
-<td><span class="tag taxi">建议预约</span></td>
+<td><span class="tag opt">暂定</span></td>
+<td><span class="tag taxi">可预约</span><span class="tag risk">暂不约</span></td>
 <td><a href="https://www.tablecheck.com/en/shops/chinya/reserve">TableCheck 预约</a> / <a href="https://chinya.co.jp/location/">官方店铺页</a></td>
-<td>浅草传统正餐；如果想吃得稳，这家最值得提前锁。</td>
+<td>先作为暂定保留；后续需要补一个更平价的浅草午餐备选，再决定是否预约。</td>
+</tr>
+<tr>
+<td><code>7/6</code></td>
+<td>午餐备选</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Sometaro+Asakusa">Sometaro Asakusa</a> / 浅草轻食</td>
+<td>大阪烧 / 文字烧 / 轻食</td>
+<td><span class="tag opt">待比较</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Sometaro+Asakusa">Google Maps</a></td>
+<td>作为 Chinya 的更轻/更平价方向占位；之后可以再补一个更明确的平价浅草餐厅。</td>
 </tr>
 <tr>
 <td><code>7/6</code></td>
 <td>晚餐</td>
 <td><a href="https://maps.app.goo.gl/dnZqMRJPsPXz3xQ58">五代目 花山うどん 銀座店</a></td>
 <td>宽乌冬 / 鬼ひも川</td>
+<td><span class="tag mustgo">已确定</span></td>
 <td><span class="tag walk">Walk-in</span>整理券 / 排队</td>
 <td><a href="https://www.hanayamaudon.co.jp/ginza/">官方店铺页</a></td>
 <td>不能当硬预约餐；若整理券时间不合适，银座就近换餐。</td>
 </tr>
 <tr>
+<td><code>7/6</code></td>
+<td>晚餐备选</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Rokurinsha+Tokyo+Station">Rokurinsha Tokyo Station</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Tsujihan+Nihonbashi">Tsujihan Nihonbashi</a></td>
+<td>沾面 / 海鲜丼</td>
+<td><span class="tag opt">现场二选一</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Rokurinsha+Tokyo+Station">Rokurinsha</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Tsujihan+Nihonbashi">Tsujihan</a></td>
+<td>如果花山乌冬整理券不合适，就在银座 / 东京站 / 日本桥这条回酒店动线上解决。</td>
+</tr>
+<tr>
+<td><code>7/7</code></td>
+<td>午餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yubadon+Naokichi+Hakone">Yubadon Naokichi</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Hatsuhana+Soba+Honten+Hakone">Hatsuhana Soba Honten</a></td>
+<td>豆皮丼 / 荞麦面</td>
+<td><span class="tag opt">现场二选一</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yubadon+Naokichi+Hakone">Yubadon</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Hatsuhana+Soba+Honten+Hakone">Hatsuhana</a></td>
+<td>箱根汤本午餐；根据到达时间和排队决定，不要影响后续山内交通和 17:00 晚餐。</td>
+</tr>
+<tr>
+<td><code>7/7</code></td>
+<td>晚餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Setsugetsuka+Bettei+Suiun+Hakone">翠雲酒店会席晚餐</a></td>
+<td>旅馆会席</td>
+<td><span class="tag mustgo">酒店已含</span></td>
+<td><span class="tag mustgo">已预约</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Setsugetsuka+Bettei+Suiun+Hakone">Google Maps</a></td>
+<td><code>17:00</code> 晚餐优先级最高；箱根当天下午行程必须围绕这个时间收束。</td>
+</tr>
+<tr>
+<td><code>7/8</code></td>
+<td>午餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Hatsuhana+Soba+Honten+Hakone">Hatsuhana Soba Honten</a> / 箱根汤本轻食</td>
+<td>荞麦面 / 轻食</td>
+<td><span class="tag opt">optional</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Hatsuhana+Soba+Honten+Hakone">Google Maps</a></td>
+<td>回东京前如果走箱根汤本就顺路；如果大涌谷/回程时间紧，直接跳过。</td>
+</tr>
+<tr>
+<td><code>7/8</code></td>
+<td>晚餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Uobei+Shibuya+Dogenzaka">Uobei Shibuya Dogenzaka</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Gyukatsu+Motomura+Shibuya">Gyukatsu Motomura Shibuya</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Afuri+Ebisu">Afuri Ebisu</a></td>
+<td>回转寿司 / 牛カツ / 拉面</td>
+<td><span class="tag opt">现场三选一</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Uobei+Shibuya+Dogenzaka">Uobei</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Gyukatsu+Motomura+Shibuya">Motomura</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Afuri+Ebisu">Afuri</a></td>
+<td>箱根回东京后的低压力晚餐池；不预约，不跨远区，按体力和队伍决定。</td>
+</tr>
+<tr>
 <td><code>7/9</code></td>
 <td>午餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kamakura+Matsubara-an">Kamakura Matsubara-an</a></td>
-<td>镰仓荞麦面</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kamakura+Matsubara-an">Kamakura Matsubara-an</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Caraway+Kamakura">Caraway Kamakura</a></td>
+<td>荞麦面 / 日式咖喱</td>
+<td><span class="tag mustgo">已确定</span><span class="tag opt">备选明确</span></td>
 <td><span class="tag taxi">建议预约</span></td>
-<td><a href="https://www.tablecheck.com/en/shops/kamakura-matsubaraan/reserve">TableCheck 预约</a></td>
-<td>镰仓日主午餐；不想预约则用 Caraway 咖喱备选。</td>
+<td><a href="https://www.tablecheck.com/en/shops/kamakura-matsubaraan/reserve">Matsubara-an TableCheck</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Caraway+Kamakura">Caraway</a></td>
+<td>Matsubara-an 是主线；不想预约或临场排队时间不合适，则用 Caraway 咖喱备选。</td>
+</tr>
+<tr>
+<td><code>7/9</code></td>
+<td>晚餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Uobei+Shibuya+Dogenzaka">Uobei Shibuya Dogenzaka</a> / 镰仓站附近轻食</td>
+<td>回转寿司 / 轻食</td>
+<td><span class="tag opt">现场二选一</span></td>
+<td><span class="tag walk">Walk-in</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Uobei+Shibuya+Dogenzaka">Uobei</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Kamakura+Station+restaurants">镰仓站附近</a></td>
+<td>远郊日不锁硬餐；江之岛加码与否决定是在镰仓吃还是回涩谷吃。</td>
+</tr>
+<tr>
+<td><code>7/10</code></td>
+<td>午餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+street+food">横滨中华街小吃线</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Yamashita+Park+Yokohama+cafe">山下公园咖啡轻食</a></td>
+<td>中华街小吃 / 咖啡轻食</td>
+<td><span class="tag opt">现场二选一</span></td>
+<td><span class="tag walk">Walk-in</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+street+food">中华街小吃</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Yamashita+Park+Yokohama+cafe">山下公园咖啡</a></td>
+<td>转场日午餐不锁单店；中华街看队伍和胃口，太挤就往海边轻食。</td>
+</tr>
+<tr>
+<td><code>7/10</code></td>
+<td>晚餐</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+restaurants">横滨中华街就近晚餐</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Minato+Mirai+Yokohama+restaurants">港未来 / 樱木町就近晚餐</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Katsuretsuan+Bashamichi+Sohonten">Katsuretsuan Bashamichi Sohonten</a></td>
+<td>中华街 / 港未来餐厅 / 炸猪排</td>
+<td><span class="tag opt">现场三选一</span></td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+restaurants">中华街</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Minato+Mirai+Yokohama+restaurants">港未来</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Katsuretsuan+Bashamichi+Sohonten">Katsuretsuan</a></td>
+<td>优先按横滨夜景动线就近吃；Katsuretsuan 是更扎实的备选，但 7/4 已有炸猪排，默认不硬排。</td>
 </tr>
 <tr>
 <td><code>7/11</code></td>
 <td>午餐</td>
 <td><a href="https://goo.gl/maps/opQ8HqivmP6yFZab8">回転わんこそば くるくるわんこ</a></td>
 <td>旋转碗子荞麦体验</td>
+<td><span class="tag mustgo">已确定</span></td>
 <td><span class="tag walk">Walk-in</span>现场排队为主</td>
 <td><a href="https://tabelog.com/tokyo/A1304/A130401/13273517/">Tabelog 店铺页</a></td>
 <td>体验型午餐，别安排太晚；出发前复核营业时间。</td>
@@ -1821,6 +1959,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>晚餐</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yakiniku+Motoyama+Shinjuku">Yakiniku Motoyama Shinjuku / 焼肉もとやま 新宿店</a></td>
 <td>烧肉 / A5 黑毛和牛 / 神户牛</td>
+<td><span class="tag mustgo">已确定</span></td>
 <td><span class="tag taxi">需要预约</span><span class="tag risk">未预约</span></td>
 <td><a href="https://www.yakiniku-motoyama.com/shinjuku">官方新宿店页</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Yakiniku+Motoyama+Shinjuku">Google Maps 预约入口</a></td>
 <td>本次烧肉已确定；放 7/11 最顺，饭后回 Park Hyatt / New York Bar。</td>
@@ -1850,12 +1989,12 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>烧肉已确定；优先锁 <code>7/11</code> 晚餐时段。订不到再启用六本木 / 麻布台就近晚餐备选。</td>
 </tr>
 <tr>
-<td>中高</td>
+<td>待定</td>
 <td><code>7/6</code> 午餐</td>
 <td>Chinya すき焼 ちんや 浅草本店（浅草老牌寿喜烧）</td>
-<td><span class="tag risk">未预约</span><span class="tag opt">视筑地早餐食量</span></td>
+<td><span class="tag opt">暂定</span><span class="tag risk">先不约</span></td>
 <td><a href="https://www.tablecheck.com/en/shops/chinya/reserve">TableCheck</a> / <a href="https://chinya.co.jp/location/">官方</a></td>
-<td>如果想把浅草午餐吃稳，就提前锁；如果筑地早餐想认真吃，这顿可以降级成浅草轻食。</td>
+<td>先保留在 source of truth；等补到更平价的浅草午餐备选后，再决定是否真的预约 Chinya。</td>
 </tr>
 <tr>
 <td>中</td>
@@ -1917,7 +2056,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tbody>
 </table></div>
 <h4 id="tbd-meals">TBD</h4>
-<p>这张表只列还没有锁定餐厅 / 不需要现在预约的餐食。已锁定但待预约的不放进 TBD，见上方预约优先级：<code>7/6</code> Chinya、<code>7/9</code> Matsubara-an、<code>7/11</code> Motoyama。已确认不用另选的不放进 TBD：<code>7/6</code> 筑地市场早餐、<code>7/8</code> 翠雲酒店早餐、<code>7/11</code> 和 <code>7/12</code> Park Hyatt 早餐。</p>
+<p>这张表只留完全没有餐厅方案的 meal。只要已经有明确餐厅、暂定餐厅或现场选项池，就放进上面的 source-of-truth 表，而不是留在 TBD。</p>
 <div class="tw"><table>
 <thead>
 <tr>
@@ -1929,13 +2068,6 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>7/3</code></td>
-<td>晚餐</td>
-<td><span class="tag luggage">TBD</span></td>
-<td>品川 / 高轮酒店附近简单晚餐</td>
-<td>落地日不锁硬餐；Tsubame Grill 只是候选，排队长就酒店附近解决。</td>
-</tr>
 <tr>
 <td><code>7/4</code></td>
 <td>早餐</td>
@@ -1951,25 +2083,11 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>当天要先去吉祥寺，适合便利店、车站咖啡或酒店附近轻食。</td>
 </tr>
 <tr>
-<td><code>7/6</code></td>
-<td>晚餐备选</td>
-<td><span class="tag luggage">TBD</span></td>
-<td>银座 / 日本桥就近</td>
-<td>五代目花山うどん以整理券 / 排队为主；如果时间不合适，就近换餐。</td>
-</tr>
-<tr>
 <td><code>7/7</code></td>
 <td>早餐</td>
 <td><span class="tag luggage">TBD</span></td>
 <td>Grand Prince / 品川站附近</td>
 <td>checkout + 箱根移动日，不建议排需要绕路或排队的早餐。</td>
-</tr>
-<tr>
-<td><code>7/8</code></td>
-<td>晚餐</td>
-<td><span class="tag luggage">TBD</span></td>
-<td>涩谷 / 惠比寿 / 酒店附近低压力晚餐</td>
-<td>烧肉已改到 7/11 Motoyama；箱根回东京后不再硬锁餐厅，现场按体力决定。</td>
 </tr>
 <tr>
 <td><code>7/9</code></td>
@@ -1984,20 +2102,6 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td><span class="tag luggage">TBD</span></td>
 <td>涩谷站 / JR-East Hotel Mets 附近</td>
 <td>checkout + 横滨转场日，优先处理行李。</td>
-</tr>
-<tr>
-<td><code>7/10</code></td>
-<td>午餐</td>
-<td><span class="tag luggage">TBD</span></td>
-<td>横滨中华街小吃 / 简餐</td>
-<td>不锁 Manchinro；现场看队伍和胃口决定。</td>
-</tr>
-<tr>
-<td><code>7/10</code></td>
-<td>晚餐</td>
-<td><span class="tag luggage">TBD</span></td>
-<td>港未来 / 樱木町 / 新宿就近</td>
-<td>横滨夜景后不为了餐厅反向移动；太累就回 Park Hyatt 附近解决。</td>
 </tr>
 <tr>
 <td><code>7/12</code></td>
@@ -3917,16 +4021,16 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>-</td>
 <td>需要预约</td>
 <td>主入口：<a href="https://omakase.in/r/sh326654">OMAKASE</a>；备选：<a href="https://restaurant.ikyu.com/120456/">一休レストラン</a> / <a href="https://tabelog.com/tokyo/A1303/A130302/13265540/?cid=google_yoyaku">Tabelog</a>。</td>
-<td><code>7/8</code> 晚餐历史候选；当前 7/8 改为涩谷 / 惠比寿低压力晚餐 TBD。</td>
+<td><code>7/8</code> 晚餐历史候选；当前 7/8 已改为涩谷 / 惠比寿低压力选项池。</td>
 <td>官网和 Google 商家信息均指向 OMAKASE；价格范围约 <code>¥15,000-19,999</code>，分量大。箱根回东京后不建议再锁这种硬餐。</td>
 </tr>
 </tbody>
 </table></div>
-<p>历史推荐优先级（已归档，不作为当前计划）：这些店都不进入当前预约优先级；<code>7/11</code> final dinner 已锁 Yakiniku Motoyama Shinjuku，<code>7/8</code> 晚餐改为低压力 TBD。</p>
+<p>历史推荐优先级（已归档，不作为当前计划）：这些店都不进入当前预约优先级；<code>7/11</code> final dinner 已锁 Yakiniku Motoyama Shinjuku，<code>7/8</code> 晚餐已有涩谷 / 惠比寿低压力选项池。</p>
 
 <h4 id="_11">待补信息</h4>
 <ul>
-<li><strong>餐厅预约</strong>：<code>7/11</code> final dinner 已锁 Yakiniku Motoyama Shinjuku，待预约；<code>7/6</code> Chinya 和 <code>7/9</code> Matsubara-an 也建议按优先级锁位。</li>
+<li><strong>餐厅预约</strong>：<code>7/11</code> final dinner 已锁 Yakiniku Motoyama Shinjuku，待预约；<code>7/9</code> Matsubara-an 建议锁位；<code>7/6</code> Chinya 暂定保留，先补一个更平价的浅草午餐备选再决定是否预约。</li>
 </ul>
 <h4 id="_12">酒店决策备注</h4>
 <ul>
