@@ -84,6 +84,22 @@ h3{font-size:16px;}
 .tw td:first-child{white-space:normal;font-weight:700;background:#fbfbfa;}
 td.merged{text-align:left;}
 td[rowspan]{display:block;}
+.itinerary-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+.itinerary-table-wrap table{display:table;min-width:680px;border-collapse:collapse;border-spacing:0;font-size:12px;}
+.itinerary-table-wrap thead{display:table-header-group;}
+.itinerary-table-wrap tbody{display:table-row-group;}
+.itinerary-table-wrap tr{display:table-row;border:0;border-radius:0;background:transparent;overflow:visible;}
+.itinerary-table-wrap th,.itinerary-table-wrap td{display:table-cell;width:auto;border:1px solid var(--line);padding:6px 7px;vertical-align:top;white-space:normal;}
+.itinerary-table-wrap th{background:#f2efe9;white-space:nowrap;}
+.itinerary-table-wrap td::before{content:none;}
+.itinerary-table-wrap td:first-child{width:72px;min-width:72px;white-space:normal;font-weight:600;background:transparent;}
+.itinerary-table-wrap td:nth-child(2){width:230px;min-width:210px;}
+.itinerary-table-wrap td:nth-child(3){width:92px;min-width:82px;}
+.itinerary-table-wrap td:nth-child(4){width:300px;min-width:260px;}
+.itinerary-table-wrap td.merged{text-align:center;vertical-align:middle;}
+.itinerary-table-wrap td[rowspan]{display:table-cell;}
+.itinerary-table-wrap td img{max-width:74px;max-height:58px;}
+.itinerary-table-wrap td img.big{max-width:92px;max-height:72px;}
 td img,th img{max-width:100%;max-height:150px;}
 td img.big,p img.big{max-width:100%;max-height:190px;}
 .hotel-table td:nth-child(1),.hotel-table td:nth-child(5){white-space:normal;}
@@ -343,7 +359,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <p><strong>交通标签：</strong><span class="tag walk">步行</span><span class="tag jr">JR</span><span class="tag metro">Metro/私铁</span><span class="tag bus">巴士</span><span class="tag taxi">出租车</span><span class="tag rail">登山铁道/缆车</span><span class="tag ship">船/观光缆车</span><span class="tag luggage">行李</span></p>
 <p><strong>地点标签：</strong><span class="tag mustgo">必去</span><span class="tag opt">optional</span><span class="tag glance">路过扫一眼</span><span class="tag quick">快进快出</span><span class="tag deep">可认真逛</span><span class="tag slow">时间黑洞</span><span class="tag risk">预约/排队风险</span>（放在“地点安排”列；备注列只写解释）</p>
 <h3 id="2026-07-02-thusfo">2026-07-02 Thu：SFO 出发</h3>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -355,31 +371,31 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td>湾区自理<br><span class="tag quick">快进快出</span></td>
+<td>湾区自理</td>
 <td>-</td>
 <td>出发日不安排额外行程。</td>
 </tr>
 <tr>
 <td>上午行程</td>
-<td>整理护照、信用卡、Suica / PASMO、eSIM、充电器<br><span class="tag mustgo">必去</span></td>
+<td>整理护照、信用卡、Suica / PASMO、eSIM、充电器</td>
 <td>-</td>
 <td>确认 United app、酒店确认邮件、一休确认邮件都能离线打开。</td>
 </tr>
 <tr>
 <td>午餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=San+Francisco+International+Airport">SFO 机场简单午餐</a><br><span class="tag quick">快进快出</span><span class="tag risk">预约/排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=San+Francisco+International+Airport">SFO 机场简单午餐</a></td>
 <td>-</td>
 <td>尽量提前到机场，避免国际航班安检压力。</td>
 </tr>
 <tr>
 <td>下午行程</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=SFO+International+Terminal">UA837 <code>12:25 PM</code> SFO -&gt; NRT</a><br><span class="tag mustgo">必去</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=SFO+International+Terminal">UA837 <code>12:25 PM</code> SFO -&gt; NRT</a></td>
 <td>-</td>
 <td>直飞，跨日抵达。</td>
 </tr>
 <tr>
 <td>晚餐</td>
-<td>飞机餐<br><span class="tag quick">快进快出</span></td>
+<td>飞机餐</td>
 <td>-</td>
 <td>飞机上。</td>
 </tr>
@@ -391,7 +407,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td>飞机上<br><span class="tag mustgo">必去</span></td>
+<td>飞机上</td>
 <td>-</td>
 <td>-</td>
 </tr>
@@ -408,7 +424,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Walk: 品川 / 高轮</strong>品川站、高轮 Gateway、Grand Prince 周边走一小圈，作为倒时差缓冲。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -420,7 +436,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td>飞机餐<br><span class="tag quick">快进快出</span></td>
+<td>飞机餐</td>
 <td>-</td>
 <td>抵达前轻食。</td>
 </tr>
@@ -432,13 +448,13 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>午餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Narita+International+Airport">飞行中 / 成田机场轻食</a><br><span class="tag quick">快进快出</span><span class="tag risk">预约/排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Narita+International+Airport">飞行中 / 成田机场轻食</a></td>
 <td>-</td>
 <td>UA837 <code>3:00 PM</code> 抵达 NRT。</td>
 </tr>
 <tr>
 <td>下午行程</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Narita+International+Airport">成田机场入境、取行李</a><br><span class="tag mustgo">必去</span><span class="tag risk">预约/排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Narita+International+Airport">成田机场入境、取行李</a></td>
 <td><img src="assets/googlemaps/narita-airport.jpg"></td>
 <td>成田进城较慢，当天只做进城和入住。</td>
 </tr>
@@ -450,7 +466,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">入住 Grand Prince Hotel Shin Takanawa</a><br><span class="tag mustgo">必去</span><span class="tag risk">预约/排队风险</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">入住 Grand Prince Hotel Shin Takanawa</a></td>
 <td><img src="assets/googlemaps/grand-prince-shin-takanawa.jpg"></td>
 <td>酒店在品川 / 高轮，机场、涩谷、东京站动线都还不错。</td>
 </tr>
@@ -468,7 +484,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=3-13-1+Takanawa+Minato-ku+Tokyo">Grand Prince Hotel Shin Takanawa</a><br><span class="tag mustgo">必去</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=3-13-1+Takanawa+Minato-ku+Tokyo">Grand Prince Hotel Shin Takanawa</a></td>
 <td><img src="assets/googlemaps/grand-prince-shin-takanawa.jpg"></td>
 <td><code>2026-07-03 -&gt; 2026-07-07</code>。</td>
 </tr>
@@ -497,7 +513,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Walk: 表参道 / 南青山</strong>表参道主轴一路往南青山、根津美术馆；注意闭馆时间。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -509,13 +525,13 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinagawa+Station+Tokyo">酒店 / 品川站附近</a><br><span class="tag quick">快进快出</span><span class="tag jr">JR</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinagawa+Station+Tokyo">酒店 / 品川站附近</a></td>
 <td>-</td>
 <td>早起；品川 → 原宿坐山手线约 20 分，先去明治神宫，晚点再南下代官山。</td>
 </tr>
 <tr>
 <td>清晨<br/>(店开门前)</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Meiji+Jingu+Tokyo">明治神宫</a><br><span class="tag deep">可认真逛</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Meiji+Jingu+Tokyo">明治神宫</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span></td>
 <td><img class="big" src="assets/recommendations/places-原宿-表参道-青山-meiji-jingu-明治神宫.jpg"></td>
 <td>日出即开门(约 5 点起,随季节变化),清晨人最少最安静;代官山店家近 11:00 才开,正好用这段没有开门限制的地方暖场。</td>
 </tr>
@@ -526,6 +542,12 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>与明治神宫相邻，清晨散步顺路一起；逛完经原宿 / 涩谷南下到代官山，刚好赶上 11:00 开门。</td>
 </tr>
 <tr>
+<td>神南 / 猫街<br/>轻扫</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=DULTON+Jinnan+Shop">DULTON Jinnan Shop</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Supreme+Tokyo">Coffee Supreme Tokyo</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=WaraTako">WaraTako</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=NUMBER+SUGAR+Tokyo">NUMBER SUGAR</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；这些是原宿到涩谷 / 表参道之间的轻量路过点。DULTON 看工业风小物件，NUMBER SUGAR 买伴手礼，Coffee Supreme / WaraTako 只在刚好经过且不排队时停。</td>
+</tr>
+<tr>
 <td>上午行程<br/>① 代官山</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Daikanyama+T-Site+Tsutaya+Books">代官山 T-SITE / 蔦屋书店</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span><span class="tag walk">步行</span></td>
 <td>-</td>
@@ -533,13 +555,19 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=mina+perhonen+materiaali+Daikanyama">minä perhonen materiaali（皆川明布料）</a><br><span class="tag mustgo">必去</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=mina+perhonen+materiaali+Daikanyama">minä perhonen materiaali（皆川明布料）</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span></td>
 <td>-</td>
 <td>必去；在代官山 Hillside Terrace C 栋，11:00–19:00、<strong>周三定休</strong>，今天周六开门；这正是从 7/8 挪到今天的主因。</td>
 </tr>
 <tr>
+<td></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=NUMBER+SUGAR+Daikanyama">NUMBER SUGAR Daikanyama</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=nanamica+Daikanyama">nanamica Daikanyama</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=SKWAT%2Ftwelvebooks">SKWAT/twelvebooks</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>代官山 T-SITE / minä 周边的新增收藏点。NUMBER SUGAR 是伴手礼，nanamica 快看服饰，SKWAT/twelvebooks 如果书店兴趣命中会变久，最多挑 1–2 个。</td>
+</tr>
+<tr>
 <td>② 中目黑</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Coverchord+Nakameguro">Coverchord Nakameguro + 目黑川散步</a><br><span class="tag mustgo">必去</span><span class="tag glance">路过扫一眼</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Coverchord+Nakameguro">Coverchord Nakameguro + 目黑川散步</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span><span class="tag walk">步行</span></td>
 <td>-</td>
 <td>必去；Coverchord 是进店快看，目黑川散步可长可短；代官山步行约 10 分钟到。</td>
 </tr>
@@ -557,7 +585,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>下午行程<br/>③ 表参道</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Omotesando+Hills">表参道 Hills</a></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Omotesando+Hills">表参道 Hills</a><br><span class="tag glance">路过扫一眼</span></td>
 <td><img src="assets/googlemaps/omotesando-hills.jpg"></td>
 <td>表参道主轴，适合品牌店和街景；不把 Hills 当深逛目标。</td>
 </tr>
@@ -569,7 +597,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=HUMAN+MADE+OFFLINE+STORE+Tokyo">HUMAN MADE OFFLINE STORE + Cafe by Blue Bottle</a><br><span class="tag quick">快进快出</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=HUMAN+MADE+OFFLINE+STORE+Tokyo">HUMAN MADE OFFLINE STORE + Cafe by Blue Bottle</a></td>
 <td><img src="assets/googlemaps/human-made-offline-store.jpg"></td>
 <td>潮流店 + 下午咖啡休息点，都在表参道段。</td>
 </tr>
@@ -580,6 +608,12 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>必去；表参道往南青山一路是设计师品牌和选物店主轴，预留充足时间。</td>
 </tr>
 <tr>
+<td></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=ARTS%26SCIENCE+Aoyama+women+flagship">ARTS&amp;SCIENCE Aoyama</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=call+Aoyama+Tokyo">call</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；器物 / 生活方式店，和南青山主轴顺路。它们不是扫一眼型，只有根津美术馆时间安全时再认真逛。</td>
+</tr>
+<tr>
 <td>⑤ 收尾</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Nezu+Museum+Tokyo">根津美术馆 Nezu Museum</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span></td>
 <td>-</td>
@@ -587,7 +621,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>晚餐</td>
-<td><a href="https://maps.app.goo.gl/rEJtP3vTVjNYCe9K8">とんかつまい泉 青山本店（老牌炸猪排）</a><br><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span></td>
+<td><a href="https://maps.app.goo.gl/rEJtP3vTVjNYCe9K8">とんかつまい泉 青山本店（老牌炸猪排）</a><br><span class="tag mustgo">必去</span><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span></td>
 <td><img src="assets/recommendations/rec-0104.jpg"></td>
 <td>老辣妹推荐；青山本店就在表参道 / 南青山线，接根津美术馆后最顺。周六普通座位以 walk-in 为主，宴会席才适合提前预约。</td>
 </tr>
@@ -599,13 +633,13 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>晚上行程<br/>（可选）</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Sky">Shibuya Sky 黄昏</a><br><span class="tag opt">optional</span><span class="tag glance">路过扫一眼</span><span class="tag risk">预约/排队风险</span><span class="tag metro">Metro</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Sky">Shibuya Sky 黄昏</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag metro">Metro</span></td>
 <td><img class="big" src="assets/googlemaps/roppongi-hills-city-view.jpg"></td>
 <td>涩谷离南青山一站，体力允许可加；建议提前订黄昏 / 夜景时段。否则今天逛足即可，不必硬塞。</td>
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa</a><br><span class="tag mustgo">必去</span><span class="tag jr">JR</span><span class="tag metro">Metro</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa</a></td>
 <td><img src="assets/googlemaps/grand-prince-shin-takanawa.jpg"></td>
 <td>从表参道 / 涩谷方向回品川；若晚间很累可直接 taxi 回酒店。</td>
 </tr>
@@ -634,7 +668,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Walk: 秋叶原 / 神田</strong>Electric Town、Super Potato、Mandarake 到神田晚餐，是紧凑步行线。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -646,7 +680,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinagawa+Station+Tokyo">酒店 / 品川站附近</a><br><span class="tag quick">快进快出</span><span class="tag jr">JR</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinagawa+Station+Tokyo">酒店 / 品川站附近</a></td>
 <td>-</td>
 <td>早一点出门，品川经新宿转中央线去吉祥寺，再沿中央线折回神田 / 秋叶原方向。</td>
 </tr>
@@ -669,16 +703,34 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>吉祥寺人气选物店，生活杂货很好买。</td>
 </tr>
 <tr>
+<td>上午加码<br/>（可选）</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Ghibli+Museum+Mitaka">Ghibli Museum 三鹰之森吉卜力美术馆</a><br><span class="tag opt">optional</span><span class="tag slow">时间黑洞</span><span class="tag risk">预约/排队风险</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；只有提前抢到票、且愿意把吉祥寺慢逛改成吉卜力主题时才启用。不要临时硬塞。</td>
+</tr>
+<tr>
 <td>午餐</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsujihan+Nihonbashi">Tsujihan Nihonbashi</a><br><span class="tag mustgo">必去</span><span class="tag jr">JR</span><span class="tag metro">Metro</span></td>
 <td><img src="assets/food/tsujihan-nihonbashi-01.jpg"></td>
 <td>必吃榜；吉祥寺沿中央线回到神田 / 东京站一带，再转 Metro 到日本桥，海鲜丼适合午餐。</td>
 </tr>
 <tr>
+<td>午餐备选</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Rojiura+Curry+SAMURAI.+Kichijoji">Rojiura Curry SAMURAI. Kichijoji</a><br><span class="tag opt">optional</span><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；如果吉祥寺上午逛得舒服，就地吃汤咖喱，代价是 Tsujihan 改到 7/6 晚餐备选或取消。</td>
+</tr>
+<tr>
 <td>下午行程</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Akihabara+Electric+Town">秋叶原 Electric Town</a><br><span class="tag glance">路过扫一眼</span><span class="tag jr">JR</span></td>
 <td><img class="big" src="assets/googlemaps/super-potato-akihabara.jpg"></td>
 <td>从日本桥 / 神田一带转到秋叶原很近；这段动线合理。</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Akihabara+UDX">Akihabara UDX</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Shueisha+Manga+Art+Heritage+Tokyo+Gallery">Shueisha Manga Art Heritage Tokyo Gallery</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；UDX 是秋叶原区域锚点，Shueisha gallery 有兴趣再进。不要和 Yodobashi / Mandarake 同时深逛。</td>
 </tr>
 <tr>
 <td></td>
@@ -718,7 +770,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa</a><br><span class="tag mustgo">必去</span><span class="tag jr">JR</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa</a></td>
 <td><img src="assets/googlemaps/grand-prince-shin-takanawa.jpg"></td>
 <td>从秋叶原 / 神田坐 JR 回品川。</td>
 </tr>
@@ -755,7 +807,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Optional: 清澄白河</strong>咖啡和庭园支线；加了筑地早餐后，这段更建议只作体力充足时的备选。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -767,27 +819,33 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsukiji+Outer+Market">筑地场外市场早餐</a><br><span class="tag quick">快进快出</span><span class="tag metro">都营/Metro</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsukiji+Outer+Market">筑地场外市场早餐</a></td>
 <td>-</td>
 <td>老辣妹这期建议早上来筑地吃早餐；从品川经新桥 / 东银座方向过去，先小吃后再切浅草。筑地场外市场不建议边走边吃，买完在店家指定区域吃完再移动。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tonboya+Tsukiji">Tonboya 蜻 / 烤鮪魚串</a><br><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tonboya+Tsukiji">Tonboya 蜻 / 烤鮪魚串</a><br><span class="tag walk">步行</span></td>
 <td>-</td>
 <td>老辣妹筑地第一站；适合作为早餐第一口，两人分食一串即可，避免后面吃不下。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8A%E3%81%AB%E3%81%8E%E3%82%8A%E5%B1%8B+%E7%AF%89%E5%9C%B0+%E4%B8%B8%E8%B1%8A">おにぎり屋 築地 丸豊</a><br><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8A%E3%81%AB%E3%81%8E%E3%82%8A%E5%B1%8B+%E7%AF%89%E5%9C%B0+%E4%B8%B8%E8%B1%8A">おにぎり屋 築地 丸豊</a><br><span class="tag walk">步行</span></td>
 <td>-</td>
 <td>老辣妹重点推荐饭团；炸虾饭团、半熟玉子饭团优先。两个人可分一个到两个，保留胃口给后面。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Matcha+Stand+Maruni+TOKYO+TSUKIJI">Matcha Stand Maruni / 米本珈琲</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Matcha+Stand+Maruni+TOKYO+TSUKIJI">Matcha Stand Maruni / 米本珈琲</a><br><span class="tag opt">optional</span><span class="tag walk">步行</span></td>
 <td>-</td>
 <td>吃完油脂类小吃后，用抹茶或米本珈琲的黑糖蜜咖啡收一下；Saito Suisan 生蚝、Shutoku ganso、Soratsuki 草莓点心按胃口加码。</td>
+</tr>
+<tr>
+<td>早餐加码<br/>（可选）</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tsukiji+Itadori+Bekkan">Tsukiji Itadori Bekkan</a><br><span class="tag opt">optional</span><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；寿司正餐候选。若启用它，浅草 Chinya 午餐就应降级或取消，不能把筑地小吃、寿司正餐和寿喜烧全叠上。</td>
 </tr>
 <tr>
 <td>上午行程</td>
@@ -803,37 +861,37 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Nakamise-dori+Street+Tokyo">仲见世通</a><br><span class="tag glance">路过扫一眼</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Nakamise-dori+Street+Tokyo">仲见世通</a><br><span class="tag walk">步行</span></td>
 <td><img class="big" src="assets/recommendations/amanda-淺草-chinya-すき焼-ちんや-浅草本店.jpg"></td>
 <td>小吃和纪念品街。</td>
 </tr>
 <tr>
 <td>午餐</td>
-<td><a href="https://maps.app.goo.gl/hw3M6myCDFjWVCAm6">Chinya すき焼 ちんや 浅草本店（浅草老牌寿喜烧）</a><br><span class="tag opt">optional</span><span class="tag risk">预约/排队风险</span></td>
+<td><a href="https://maps.app.goo.gl/hw3M6myCDFjWVCAm6">Chinya すき焼 ちんや 浅草本店（浅草老牌寿喜烧）</a><br><span class="tag risk">预约/排队风险</span></td>
 <td><img class="big" src="assets/recommendations/amanda-淺草-chinya-すき焼-ちんや-浅草本店.jpg"></td>
 <td>老辣妹推荐；浅草传统正餐，适合替代 Sometaro。加了筑地早餐后不要硬吃大餐：能预约、且早上没吃太满再保留，否则改成浅草轻食。</td>
 </tr>
 <tr>
 <td>晴空塔<br/>(可选,不上去)</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Skytree">东京晴空塔(远观 / Solamachi)</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag walk">步行</span><span class="tag metro">都营/Metro</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Skytree">东京晴空塔(远观 / Solamachi)</a><br><span class="tag opt">optional</span><span class="tag walk">步行</span><span class="tag metro">都营/Metro</span></td>
 <td><img class="big" src="assets/recommendations/amanda-墨田區-押上-向島-京島-東京スカイツリー.jpg"></td>
 <td>你说不必上展望台：浅草过河可远观即可；加了筑地早餐后，这段更建议时间紧就跳过。</td>
 </tr>
 <tr>
 <td>午后①<br/>蔵前</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kuramae+Tokyo">蔵前漫步（Kakimori 文具 / Leaves Coffee / 皮革杂货）</a><br><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kuramae+Tokyo">蔵前漫步（Kakimori 文具 / Leaves Coffee / 皮革杂货）</a><br><span class="tag walk">步行</span></td>
 <td><img src="assets/recommendations/rec-0034.jpg"></td>
 <td>从浅草向南步行约 15 分即到；Kakimori / Leaves Coffee / 皮具杂货只挑 1–2 个快看，别把蔵前变成主战场。</td>
 </tr>
 <tr>
 <td>午后②<br/>清澄白河(可选)</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kiyosumi+Shirakawa+Tokyo">清澄白河（清澄庭园 + Blue Bottle 1 号店 + POTPURRI / Babaghuri）</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag metro">都营大江户线</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kiyosumi+Shirakawa+Tokyo">清澄白河（清澄庭园 + POTPURRI / Babaghuri / Aoba-do）</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag metro">都营大江户线</span></td>
 <td><img src="assets/recommendations/rec-0031.jpg"></td>
-<td>筑地早餐后当天食物密度已经很高；清澄庭园和咖啡店会占时间，除非浅草 / 蔵前很顺，否则跳过。</td>
+<td>新增 Google 收藏点已合并到这条 optional 支线：清澄庭园、POTPURRI、Babaghuri、Aoba-do。器物店会吃时间，只在浅草 / 蔵前很顺时启用。</td>
 </tr>
 <tr>
 <td>下午行程<br/>银座</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Tokyo">银座</a><br><span class="tag metro">Metro/都营</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Tokyo">银座</a><br><span class="tag glance">路过扫一眼</span><span class="tag metro">Metro/都营</span></td>
 <td><img class="big" src="assets/googlemaps/ginza-six.jpg"></td>
 <td>从浅草 / 蔵前 / 清澄白河转到银座做购物；这段需要坐地铁，不建议步行硬连。</td>
 </tr>
@@ -856,8 +914,14 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>文具店，非常适合顺路逛。</td>
 </tr>
 <tr>
+<td></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Freitag+Store+Tokyo+GINZA">Freitag Store Tokyo GINZA</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=BONGENCOFFEE+Ginza">BONGENCOFFEE</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Ginza+Brazil">Ginza Brazil</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；银座主线上的轻量补点。Freitag 看包，BONGEN / Brazil 只选一个咖啡休息，不额外增加正餐。</td>
+</tr>
+<tr>
 <td>晚餐</td>
-<td><a href="https://maps.app.goo.gl/dnZqMRJPsPXz3xQ58">五代目 花山うどん 銀座店（宽乌冬）</a><br><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span></td>
+<td><a href="https://maps.app.goo.gl/dnZqMRJPsPXz3xQ58">五代目 花山うどん 銀座店（宽乌冬）</a><br><span class="tag mustgo">必去</span><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span></td>
 <td><img src="assets/recommendations/rec-0134.jpg"></td>
 <td>老辣妹推荐；下午在银座时最顺。银座店以整理券 / 排队为主，不能当硬预约餐，建议早些去拿号。</td>
 </tr>
@@ -887,13 +951,13 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">整理箱根过夜小包</a><br><span class="tag luggage">行李</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">整理箱根过夜小包</a></td>
 <td>-</td>
 <td>大件行李建议第二天转运到涩谷。</td>
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa</a><br><span class="tag mustgo">必去</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa</a></td>
 <td><img src="assets/googlemaps/grand-prince-shin-takanawa.jpg"></td>
 <td>前段最后一晚。</td>
 </tr>
@@ -924,7 +988,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Area: 元箱根 / 芦之湖</strong>天气和班次允许再加；必须把 17:00 翠雲晚餐风险放在前面。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -936,13 +1000,13 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa / 品川站</a><br><span class="tag quick">快进快出</span><span class="tag luggage">行李</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Prince+Hotel+Shin+Takanawa">Grand Prince Hotel Shin Takanawa / 品川站</a></td>
 <td><img src="assets/googlemaps/grand-prince-shin-takanawa.jpg"></td>
 <td>checkout 后去箱根；只带过夜小包。</td>
 </tr>
 <tr>
 <td>上午行程</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">大件行李转运到 JR-East Hotel Mets Shibuya</a><br><span class="tag luggage">行李</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">大件行李转运到 JR-East Hotel Mets Shibuya</a></td>
 <td><img src="assets/googlemaps/jr-east-hotel-mets-shibuya.jpg"></td>
 <td>箱根只带过夜小包，会舒服很多。</td>
 </tr>
@@ -977,6 +1041,12 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>从元箱根港 / 芦之湖步行可达；湖边鸟居是箱根最经典画面。</td>
 </tr>
 <tr>
+<td>美术馆加码<br/>二选一</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Narukawa+Art+Museum">Narukawa Art Museum</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Hakone+Open-Air+Museum">The Hakone Open-Air Museum</a><br><span class="tag opt">optional</span><span class="tag slow">时间黑洞</span><span class="tag bus">箱根登山巴士</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；成川美术馆更贴元箱根 / 芦之湖，Open-Air Museum 更贴强罗。只能二选一，且必须优先保证 17:00 翠雲晚餐。</td>
+</tr>
+<tr>
 <td></td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=Motohakone-ko+Pier+Hakone">箱根海盗船 / 元箱根港，可选</a><br><span class="tag opt">optional</span><span class="tag risk">预约/排队风险</span><span class="tag ship">船</span></td>
 <td><img class="big" src="assets/recommendations/amanda-箱根-箱根海賊船-元箱根港.jpg"></td>
@@ -984,7 +1054,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>晚餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Setsugetsuka+Bettei+Suiun+Hakone">翠雲酒店会席晚餐 <code>17:00</code></a><br><span class="tag mustgo">必去</span><span class="tag risk">预约/排队风险</span><span class="tag bus">巴士</span><span class="tag rail">登山线</span><span class="tag taxi">出租车</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Setsugetsuka+Bettei+Suiun+Hakone">翠雲酒店会席晚餐 <code>17:00</code></a><br><span class="tag mustgo">必去</span><span class="tag bus">巴士</span><span class="tag rail">登山线</span><span class="tag taxi">出租车</span></td>
 <td>-</td>
 <td>已订含晚餐；从芦之湖回强罗要预留充足时间，必要时 taxi 到酒店。</td>
 </tr>
@@ -996,7 +1066,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8B%E9%83%A1%E7%AE%B1%E6%A0%B9%E7%94%BA%E5%BC%B7%E7%BE%85+1300-61">雪月花別邸 翠雲（共立リゾート）/ Suiun</a><br><span class="tag mustgo">必去</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E8%B6%B3%E6%9F%84%E4%B8%8B%E9%83%A1%E7%AE%B1%E6%A0%B9%E7%94%BA%E5%BC%B7%E7%BE%85+1300-61">雪月花別邸 翠雲（共立リゾート）/ Suiun</a></td>
 <td><img src="assets/googlemaps/setsugetsuka-bettei-suiun.jpg"></td>
 <td><code>2026-07-07 -&gt; 2026-07-08</code>。</td>
 </tr>
@@ -1017,7 +1087,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Walk: 涩谷 / 惠比寿</strong>酒店、涩谷站、惠比寿晚餐是低强度收尾；代官山不要补回这天。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -1029,7 +1099,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Setsugetsuka+Bettei+Suiun+Hakone">翠雲酒店早餐</a><br><span class="tag quick">快进快出</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Setsugetsuka+Bettei+Suiun+Hakone">翠雲酒店早餐</a></td>
 <td>-</td>
 <td>已订含早餐。</td>
 </tr>
@@ -1065,7 +1135,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>下午行程</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">回东京，入住涩谷</a><br><span class="tag mustgo">必去</span><span class="tag rail">箱根登山线</span><span class="tag jr">JR/新干线</span><span class="tag luggage">行李</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">回东京，入住涩谷</a><br><span class="tag rail">箱根登山线</span><span class="tag jr">JR/新干线</span></td>
 <td><img src="assets/googlemaps/jr-east-hotel-mets-shibuya.jpg"></td>
 <td>强罗 / 箱根汤本回小田原，再回东京；到涩谷后取转运行李。下午通常已 15:00–16:00，保持轻松。</td>
 </tr>
@@ -1095,7 +1165,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=3-29-17+Shibuya+Shibuya-ku+Tokyo">JR-East Hotel Mets Shibuya</a><br><span class="tag mustgo">必去</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=3-29-17+Shibuya+Shibuya-ku+Tokyo">JR-East Hotel Mets Shibuya</a></td>
 <td><img src="assets/googlemaps/jr-east-hotel-mets-shibuya.jpg"></td>
 <td><code>2026-07-08 -&gt; 2026-07-10</code>。</td>
 </tr>
@@ -1124,7 +1194,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Optional: 江之岛</strong>体力、天气和时间都好再加；不要为了江之岛压缩镰仓主线。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -1136,7 +1206,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Station">涩谷站附近简单早餐</a><br><span class="tag quick">快进快出</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shibuya+Station">涩谷站附近简单早餐</a></td>
 <td>-</td>
 <td>早点出发；今天只做镰仓，保留完整白天给寺社、长谷和江之电。</td>
 </tr>
@@ -1154,7 +1224,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Komachi-dori+Street+Kamakura">小町通</a><br><span class="tag deep">可认真逛</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Komachi-dori+Street+Kamakura">小町通</a><br><span class="tag walk">步行</span></td>
 <td><img class="big" src="assets/food/caraway-kamakura-01.jpg"></td>
 <td>鹤冈八幡宫出来回镰仓站方向顺路逛；适合小吃和轻购物。</td>
 </tr>
@@ -1214,7 +1284,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">JR-East Hotel Mets Shibuya</a><br><span class="tag mustgo">必去</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">JR-East Hotel Mets Shibuya</a></td>
 <td><img src="assets/googlemaps/jr-east-hotel-mets-shibuya.jpg"></td>
 <td>回涩谷后步行回酒店；这是中段最后一晚，第二天 checkout。</td>
 </tr>
@@ -1240,7 +1310,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Walk: 海边 / 港未来</strong>中华街 → 山下公园 → 红砖仓库 → 港未来 → 空中缆车 / 樱木町，是横滨最顺路线。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -1252,7 +1322,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">JR-East Hotel Mets Shibuya / 涩谷站</a><br><span class="tag quick">快进快出</span><span class="tag luggage">行李</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=JR-East+Hotel+Mets+Shibuya">JR-East Hotel Mets Shibuya / 涩谷站</a></td>
 <td>-</td>
 <td>checkout；大件行李优先宅急便 / 酒店寄送到 Park Hyatt，或寄存在涩谷酒店，晚上回东京后再取。</td>
 </tr>
@@ -1276,13 +1346,13 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>午餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+restaurants">横滨中华街小吃 / 简餐</a><br><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+restaurants">横滨中华街小吃 / 简餐</a><br><span class="tag opt">optional</span><span class="tag walk">步行</span></td>
 <td>-</td>
 <td>今天是转场日，午餐不锁餐厅；中华街现场看队伍和胃口决定。</td>
 </tr>
 <tr>
 <td>午餐备选</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yamashita+Park+Yokohama+cafe">山下公园 / 港边咖啡轻食</a><br><span class="tag opt">optional</span><span class="tag quick">快进快出</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yamashita+Park+Yokohama+cafe">山下公园 / 港边咖啡轻食</a><br><span class="tag opt">optional</span><span class="tag walk">步行</span></td>
 <td>-</td>
 <td>如果中华街太挤，就往山下公园 / 海边方向找轻食。</td>
 </tr>
@@ -1312,7 +1382,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>晚餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+restaurants">横滨中华街轻松晚餐（避免炸猪排重复）</a><br><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Yokohama+Chinatown+restaurants">横滨中华街轻松晚餐（避免炸猪排重复）</a><br><span class="tag opt">optional</span><span class="tag walk">步行</span></td>
 <td>-</td>
 <td>因为 <code>7/4</code> 已安排まい泉，今天不再默认 Katsuretsuan；横滨中华街或港未来就近解决更轻松。</td>
 </tr>
@@ -1336,7 +1406,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=3-7-1-2+Nishi-Shinjuku+Shinjuku-ku+Tokyo">Park Hyatt Tokyo</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span><span class="tag taxi">出租车</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=3-7-1-2+Nishi-Shinjuku+Shinjuku-ku+Tokyo">Park Hyatt Tokyo</a><br><span class="tag taxi">出租车</span></td>
 <td><img src="assets/googlemaps/park-hyatt-tokyo.jpg"></td>
 <td><code>2026-07-10 -&gt; 2026-07-12</code>；当天是转场日，晚间抵达后不再安排都厅展望室，留给酒店体验。</td>
 </tr>
@@ -1367,7 +1437,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Optional: 忠灵塔</strong>经典构图但不在河口湖站旁，一日游里是加码，不要硬塞。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -1379,55 +1449,61 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>出发</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Expressway+Bus+Terminal">新宿高速巴士总站 -&gt; 河口湖站</a><br><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag bus">高速巴士</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Expressway+Bus+Terminal">新宿高速巴士总站 -&gt; 河口湖站</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag bus">高速巴士</span></td>
 <td><img class="big" src="assets/googlemaps/newoman-shinjuku.jpg"></td>
 <td>新宿出发最直观；也可查 JR / 富士回游特急。务必按当天车次和天气决定。</td>
 </tr>
 <tr>
 <td>上午</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kawaguchiko+Station">河口湖站</a><br><span class="tag deep">可认真逛</span><span class="tag bus">周游巴士</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Kawaguchiko+Station">河口湖站</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag bus">周游巴士</span></td>
 <td><img class="big" src="assets/googlemaps/lake-kawaguchi.jpg"></td>
 <td>富士山日交通中心；到湖边、大石公园通常依赖周游巴士或出租车。</td>
 </tr>
 <tr>
 <td>午餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Houtou+Fudou+Kawaguchiko">Houtou Fudou Kawaguchiko</a><br><span class="tag bus">巴士</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Houtou+Fudou+Kawaguchiko">Houtou Fudou Kawaguchiko</a><br><span class="tag opt">optional</span><span class="tag bus">巴士</span><span class="tag walk">步行</span></td>
 <td><img src="assets/food/houtou-fudou-kawaguchiko-01.jpg"></td>
 <td>山梨乡土ほうとう；适合作为地方特色午餐。</td>
 </tr>
 <tr>
 <td>午餐备选</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Sanrokuen+Kawaguchiko">Sanrokuen</a><br><span class="tag opt">optional</span><span class="tag risk">预约/排队风险</span><span class="tag taxi">出租车</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Sanrokuen+Kawaguchiko">Sanrokuen</a><br><span class="tag opt">optional</span><span class="tag taxi">出租车</span></td>
 <td><img src="assets/food/sanrokuen-01.jpg"></td>
 <td>围炉烧更有地方感，但动线要按当天车次确认。</td>
 </tr>
 <tr>
 <td>下午</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Lake+Kawaguchi">河口湖</a><br><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span><span class="tag bus">周游巴士</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Lake+Kawaguchi">河口湖</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span><span class="tag bus">周游巴士</span></td>
 <td><img src="assets/googlemaps/lake-kawaguchi.jpg"></td>
 <td>富士山主视角；天气不好就不值得专程去。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Oishi+Park+Kawaguchiko">大石公园</a><br><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag bus">周游巴士</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Oishi+Park+Kawaguchiko">大石公园</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag bus">周游巴士</span></td>
 <td><img src="assets/googlemaps/oishi-park-kawaguchiko.jpg"></td>
 <td>看富士山和湖景很经典；注意回程巴士时间。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Mt.+Fuji+Panoramic+Ropeway">富士山全景缆车</a><br><span class="tag opt">optional</span><span class="tag risk">预约/排队风险</span><span class="tag rail">缆车</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Mt.+Fuji+Panoramic+Ropeway">富士山全景缆车</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag rail">缆车</span></td>
 <td><img class="big" src="assets/googlemaps/lake-kawaguchi.jpg"></td>
 <td>天气好才值得排；云层厚时直接取消。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Chureito+Pagoda">忠灵塔，可选</a><br><span class="tag opt">optional</span><span class="tag slow">时间黑洞</span><span class="tag jr">JR/富士急行</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Chureito+Pagoda">忠灵塔，可选</a><br><span class="tag opt">optional</span><span class="tag slow">时间黑洞</span><span class="tag risk">预约/排队风险</span><span class="tag jr">JR/富士急行</span><span class="tag walk">步行</span></td>
 <td><img class="big" src="assets/recommendations/places-富士-河口湖-mount-fuji-tenku-no-torii-天空鸟居.jpg"></td>
 <td>经典构图但不在河口湖站旁边；一日游时间紧时优先级低于河口湖 + 大石公园。</td>
 </tr>
 <tr>
+<td></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Mount+Fuji+Distant+Worship+Site+Tenku+no+Torii">天空鸟居 Tenku no Torii</a><br><span class="tag opt">optional</span><span class="tag slow">时间黑洞</span><span class="tag taxi">出租车</span></td>
+<td><img class="big" src="assets/recommendations/places-富士-河口湖-mount-fuji-tenku-no-torii-天空鸟居.jpg"></td>
+<td>新增 Google 收藏点；天气极好、且愿意用 taxi 加码才去。不是河口湖主线，不要拖大件行李。</td>
+</tr>
+<tr>
 <td>回程</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Station">河口湖 -&gt; 新宿</a><br><span class="tag deep">可认真逛</span><span class="tag bus">高速巴士</span><span class="tag jr">JR</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Station">河口湖 -&gt; 新宿</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag bus">高速巴士</span><span class="tag jr">JR</span></td>
 <td><img class="big" src="assets/recommendations/places-新宿-shinjuku-station-新宿站.jpg"></td>
 <td>晚间回东京后不要安排硬餐；新宿站附近简单吃即可。</td>
 </tr>
@@ -1448,7 +1524,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Walk: 六本木 / 麻布台</strong>六本木 Hills → 麻布台 Hills → 东京塔，final dinner 和 New York Bar 优先。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -1460,7 +1536,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐 / Brunch</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">Park Hyatt Tokyo 慢早餐</a><br><span class="tag quick">快进快出</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">Park Hyatt Tokyo 慢早餐</a></td>
 <td>-</td>
 <td>最后一整天先保留酒店体验；不额外安排外出 brunch，午餐再去新宿吃体验型餐厅。</td>
 </tr>
@@ -1472,7 +1548,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Metropolitan+Government+Building+Observatory">东京都厅展望室</a><br><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Metropolitan+Government+Building+Observatory">东京都厅展望室</a><br><span class="tag deep">可认真逛</span><span class="tag walk">步行</span></td>
 <td><img src="assets/recommendations/rec-0165.jpg"></td>
 <td>免费展望台，和酒店很近。</td>
 </tr>
@@ -1484,7 +1560,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>午餐</td>
-<td><a href="https://goo.gl/maps/opQ8HqivmP6yFZab8">回転わんこそば くるくるわんこ（旋转碗子荞麦体验）</a><br><span class="tag risk">预约/排队风险</span><span class="tag taxi">出租车</span><span class="tag walk">步行</span></td>
+<td><a href="https://goo.gl/maps/opQ8HqivmP6yFZab8">回転わんこそば くるくるわんこ（旋转碗子荞麦体验）</a><br><span class="tag mustgo">必去</span><span class="tag risk">预约/排队风险</span><span class="tag taxi">出租车</span><span class="tag walk">步行</span></td>
 <td><img src="assets/recommendations/rec-0160.jpg"></td>
 <td>老辣妹推荐；体验型午餐，适合新宿上午结束后去。通常 walk-in/现场排队，营业时间要出发前复核。</td>
 </tr>
@@ -1496,21 +1572,33 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>下午行程</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Roppongi+Hills">六本木 Hills</a><br><span class="tag glance">路过扫一眼</span><span class="tag metro">都营大江户线/Metro</span><span class="tag taxi">出租车</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Roppongi+Hills">六本木 Hills</a><br><span class="tag deep">可认真逛</span><span class="tag metro">都营大江户线/Metro</span><span class="tag taxi">出租车</span></td>
 <td><img src="assets/googlemaps/roppongi-hills-city-view.jpg"></td>
 <td>新宿到六本木不算绕，适合最后一天城市线；从新宿站或都厅前站转过去。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Azabudai+Hills">麻布台 Hills</a><br><span class="tag glance">路过扫一眼</span><span class="tag walk">步行</span><span class="tag metro">Metro</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Azabudai+Hills">麻布台 Hills</a><br><span class="tag deep">可认真逛</span><span class="tag walk">步行</span><span class="tag metro">Metro</span></td>
 <td><img src="assets/googlemaps/azabudai-hills.jpg"></td>
 <td>六本木 / 东京塔一带顺路；六本木 Hills、麻布台 Hills、东京塔可以连成一条城市步行线。</td>
 </tr>
 <tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Tower">东京塔</a><br><span class="tag glance">路过扫一眼</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Tokyo+Tower">东京塔</a><br><span class="tag deep">可认真逛</span><span class="tag walk">步行</span></td>
 <td><img src="assets/recommendations/rec-0043.jpg"></td>
 <td>作为最后一天东京城市地标；从麻布台 / 神谷町方向步行可达。</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Roppongi+Hills+Tokyo+City+View">Roppongi Hills Tokyo City View</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Grand+Hyatt+Tokyo+Roppongi">Grand Hyatt Tokyo 点灯机位</a><br><span class="tag opt">optional</span><span class="tag deep">可认真逛</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；想正式看东京塔夜景就选 City View，想轻量拍照就只用 Grand Hyatt / 六本木天桥机位，不要两个都深逛。</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Zojo-ji">增上寺 Zojo-ji</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Akabane+Bridge">赤羽桥 Akabane Bridge</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=TOHO+Cinemas+Roppongi+Hills">TOHO Cinemas Roppongi Hills</a><br><span class="tag opt">optional</span><span class="tag glance">路过扫一眼</span><span class="tag walk">步行</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；这些是东京塔 / 六本木拍照机位，适合顺路扫一眼，不要为了机位牺牲 final dinner 和 New York Bar。</td>
 </tr>
 <tr>
 <td>晚餐</td>
@@ -1531,14 +1619,20 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>如果想把 Park Hyatt 体验做完整，晚餐后从麻布台 / 六本木 taxi 回酒店最省力。</td>
 </tr>
 <tr>
+<td>酒吧备选</td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Sky+Bar+%26+Dining+Stellar+Garden">Sky Bar &amp; Dining Stellar Garden</a><br><span class="tag opt">optional</span><span class="tag risk">预约/排队风险</span><span class="tag taxi">出租车</span></td>
+<td>-</td>
+<td>新增 Google 收藏点；东京塔景观 bar。和 New York Bar 二选一，不建议同晚双酒吧。</td>
+</tr>
+<tr>
 <td></td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">整理行李</a><br><span class="tag mustgo">必去</span><span class="tag risk">预约/排队风险</span><span class="tag luggage">行李</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">整理行李</a></td>
 <td>-</td>
 <td>第二天去 NRT；晚上把机场交通和行李整理好。</td>
 </tr>
 <tr>
 <td>入住</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">Park Hyatt Tokyo</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span><span class="tag taxi">出租车</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">Park Hyatt Tokyo</a></td>
 <td><img src="assets/googlemaps/park-hyatt-tokyo.jpg"></td>
 <td>最后一晚。</td>
 </tr>
@@ -1562,7 +1656,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <figcaption><strong>Walk: 新宿最后采购</strong>只做 Park Hyatt / 新宿站周边近距离采购，午餐不排队不预约。</figcaption>
 </figure>
 </div>
-<div class="tw"><table>
+<div class="tw itinerary-table-wrap"><table>
 <thead>
 <tr>
 <th>模块</th>
@@ -1574,7 +1668,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <tbody>
 <tr>
 <td>早餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">Park Hyatt Tokyo</a><br><span class="tag quick">快进快出</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Park+Hyatt+Tokyo">Park Hyatt Tokyo</a></td>
 <td>-</td>
 <td>轻松早餐。</td>
 </tr>
@@ -1586,19 +1680,19 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>午餐</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Station">新宿 / 机场简单午餐</a><br><span class="tag quick">快进快出</span><span class="tag risk">预约/排队风险</span><span class="tag walk">步行</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Shinjuku+Station">新宿 / 机场简单午餐</a></td>
 <td>-</td>
 <td>不排需要预约或排队很久的餐厅。</td>
 </tr>
 <tr>
 <td>下午行程</td>
-<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Narita+International+Airport">前往成田机场</a><br><span class="tag mustgo">必去</span><span class="tag deep">可认真逛</span><span class="tag risk">预约/排队风险</span><span class="tag jr">JR</span><span class="tag bus">机场巴士</span><span class="tag taxi">出租车</span></td>
+<td><a href="https://www.google.com/maps/search/?api=1&amp;query=Narita+International+Airport">前往成田机场</a><br><span class="tag jr">JR</span><span class="tag bus">机场巴士</span><span class="tag taxi">出租车</span></td>
 <td><img src="assets/googlemaps/narita-airport.jpg"></td>
 <td>UA838 <code>5:05 PM</code> 起飞；推荐新宿 / 东京站接 Narita Express，或查 Park Hyatt / 新宿区域机场巴士。建议午后前往 NRT。</td>
 </tr>
 <tr>
 <td>晚餐</td>
-<td>飞机餐<br><span class="tag quick">快进快出</span><span class="tag risk">预约/排队风险</span></td>
+<td>飞机餐</td>
 <td>-</td>
 <td>回程航班。</td>
 </tr>
@@ -1610,7 +1704,7 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 <tr>
 <td>入住</td>
-<td>飞机上 / 回家<br><span class="tag mustgo">必去</span></td>
+<td>飞机上 / 回家</td>
 <td>-</td>
 <td>-</td>
 </tr>
