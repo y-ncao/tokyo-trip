@@ -1,0 +1,37 @@
+[
+  {
+    "row_index": 21,
+    "query": "minä perhonen materiaali Tokyo",
+    "outputBase": "007-mina-perhonen-materiaali-daikanyama"
+  },
+  {
+    "row_index": 68,
+    "query": "FREITAG STORE TOKYO GINZA",
+    "outputBase": "050-freitag-store-tokyo-ginza"
+  },
+  {
+    "row_index": 73,
+    "query": "Tokyo Station Marunouchi Station Building",
+    "outputBase": "054-tokyo-station-marunouchi"
+  },
+  {
+    "row_index": 116,
+    "query": "Yamate Italian Garden Yokohama",
+    "outputBase": "078-yamate-western-style-houses-yokohama"
+  },
+  {
+    "row_index": 130,
+    "query": "河口湖駅",
+    "outputBase": "088-kawaguchiko-station"
+  },
+  {
+    "row_index": 131,
+    "query": "ほうとう不動 河口湖北本店",
+    "outputBase": "089-houtou-fudou-kawaguchiko"
+  },
+  {
+    "row_index": 140,
+    "query": "新宿中央公園",
+    "outputBase": "096-shinjuku-central-park"
+  }
+]

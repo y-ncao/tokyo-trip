@@ -1,0 +1,17 @@
+[
+  {
+    "row_index": 73,
+    "query": "東京駅丸の内駅舎",
+    "outputBase": "054-tokyo-station-marunouchi"
+  },
+  {
+    "row_index": 130,
+    "query": "Kawaguchiko Station building",
+    "outputBase": "088-kawaguchiko-station"
+  },
+  {
+    "row_index": 140,
+    "query": "Shinjuku Chuo Park Tokyo",
+    "outputBase": "096-shinjuku-central-park"
+  }
+]
