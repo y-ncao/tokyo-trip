@@ -1827,38 +1827,92 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 </tr>
 </tbody>
 </table></div>
-<h4 id="reservation-priority-restaurants">需要提前预约 / 优先锁位</h4>
+<h4 id="reservation-priority-restaurants">需要提前预约 / 优先锁位（当前计划）</h4>
+<p>这张表只列当前已经放进每日行程、且出发前最好主动处理的餐厅；Amanda 历史推荐和 Google 收藏候选不进入这里。状态里的“未预约”表示还需要你后续确认/订位。</p>
 <div class="tw"><table>
 <thead>
 <tr>
 <th>优先级</th>
 <th>日期</th>
 <th>餐厅</th>
+<th>当前状态</th>
 <th>预约链接</th>
-<th>为什么要预约</th>
+<th>下一步</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>高（待预约）</td>
+<td>高</td>
 <td><code>7/11</code> 晚餐</td>
 <td>Yakiniku Motoyama Shinjuku / 焼肉もとやま 新宿店</td>
+<td><span class="tag risk">未预约</span><span class="tag mustgo">已确定</span></td>
 <td><a href="https://www.yakiniku-motoyama.com/shinjuku">官方新宿店页</a> / <a href="https://www.google.com/maps/search/?api=1&amp;query=Yakiniku+Motoyama+Shinjuku">Google Maps</a></td>
-<td>烧肉已确定；最后一晚正式晚餐不建议赌 walk-in，优先锁位。</td>
+<td>烧肉已确定；优先锁 <code>7/11</code> 晚餐时段。订不到再启用六本木 / 麻布台就近晚餐备选。</td>
 </tr>
 <tr>
 <td>中高</td>
 <td><code>7/6</code> 午餐</td>
 <td>Chinya すき焼 ちんや 浅草本店（浅草老牌寿喜烧）</td>
+<td><span class="tag risk">未预约</span><span class="tag opt">视筑地早餐食量</span></td>
 <td><a href="https://www.tablecheck.com/en/shops/chinya/reserve">TableCheck</a> / <a href="https://chinya.co.jp/location/">官方</a></td>
-<td>浅草传统正餐，午餐时间容易受排队/满席影响；预约能稳定当天节奏。</td>
+<td>如果想把浅草午餐吃稳，就提前锁；如果筑地早餐想认真吃，这顿可以降级成浅草轻食。</td>
 </tr>
 <tr>
 <td>中</td>
 <td><code>7/9</code> 午餐</td>
 <td>Kamakura Matsubara-an（镰仓荞麦面）</td>
+<td><span class="tag risk">未预约</span><span class="tag opt">可用 Caraway 备选</span></td>
 <td><a href="https://www.tablecheck.com/en/shops/kamakura-matsubaraan/reserve">TableCheck</a></td>
-<td>镰仓日午餐位置关键；预约能避免午餐排队拖慢长谷 / 大佛段。</td>
+<td>想稳住镰仓午餐节奏就预约；不想被时间绑住，则现场改 Caraway 或镰仓站周边简餐。</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="walk-in-queue-meals">不用提前预约，但要接受现场排队 / 整理券</h4>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>日期</th>
+<th>餐次</th>
+<th>餐厅 / 场景</th>
+<th>状态</th>
+<th>处理方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>7/4</code></td>
+<td>午餐</td>
+<td>ごはんや一芯 代官山</td>
+<td><span class="tag walk">Walk-in</span></td>
+<td>午餐不可预约，早点到；卖完或队伍太长就改代官山附近简餐。</td>
+</tr>
+<tr>
+<td><code>7/4</code></td>
+<td>晚餐</td>
+<td>とんかつまい泉 青山本店</td>
+<td><span class="tag walk">Walk-in</span></td>
+<td>普通座位以现场为主；如果排队太长，改中目黑 さもん 或表参道附近。</td>
+</tr>
+<tr>
+<td><code>7/6</code></td>
+<td>早餐</td>
+<td>筑地市场小吃线</td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">排队风险</span></td>
+<td>不预约，按队伍和胃口取舍；不要为了单店排太久。</td>
+</tr>
+<tr>
+<td><code>7/6</code></td>
+<td>晚餐</td>
+<td>五代目 花山うどん 銀座店</td>
+<td><span class="tag walk">Walk-in</span><span class="tag risk">整理券</span></td>
+<td>不能当硬预约餐；若整理券时间不合适，就近换银座 / 日本桥晚餐。</td>
+</tr>
+<tr>
+<td><code>7/11</code></td>
+<td>午餐</td>
+<td>回転わんこそば くるくるわんこ</td>
+<td><span class="tag walk">Walk-in</span></td>
+<td>体验型午餐，别拖太晚；如果队伍影响下午六本木 / 麻布台，就直接跳过。</td>
 </tr>
 </tbody>
 </table></div>
@@ -3221,8 +3275,8 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td><img src="assets/recommendations/rec-0100.jpg"></td>
 <td>餐厅</td>
 <td>澀谷</td>
-<td>涩谷烧肉/内脏烤肉店，适合安排一顿比较有记忆点的肉类晚餐。</td>
-<td>7/4 或 7/8（涩谷/原宿/表参道线）</td>
+<td>涩谷烧肉/内脏烤肉店，已降级为历史候选；当前烧肉已锁 7/11 Yakiniku Motoyama Shinjuku。</td>
+<td>不进入当前计划；仅在 Motoyama 订不到且仍想吃涩谷烧肉时再考虑。</td>
 <td><a href="https://www.youtube.com/watch?v=Igp5SBeaRxw&amp;t=549s">09:09</a></td>
 </tr>
 <tr>
@@ -3230,8 +3284,8 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td><img src="assets/recommendations/rec-0101.jpg"></td>
 <td>餐厅</td>
 <td>澀谷</td>
-<td>涩谷烧肉店，同一品牌本店/分店可作为晚餐备选。</td>
-<td>7/4 或 7/8（涩谷/原宿/表参道线）</td>
+<td>涩谷烧肉店，同一品牌本店/分店；已降级为历史候选。</td>
+<td>不进入当前计划；仅作为 Motoyama 订不到时的远端备选。</td>
 <td><a href="https://www.youtube.com/watch?v=Igp5SBeaRxw&amp;t=549s">09:09</a></td>
 </tr>
 <tr>
@@ -3843,10 +3897,10 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>麻布台 Hills</td>
 <td><a href="https://www.google.com/maps/search/?api=1&amp;query=YORONIKU+TOKYO+AZABUDAI+HILLS">YORONIKU TOKYO Azabudai Hills</a></td>
 <td>烤肉 / 和牛</td>
-<td><strong>需要预约，优先级最高</strong></td>
+<td><strong>需要预约，已降级为历史候选</strong></td>
 <td><a href="https://www.tablecheck.com/en/shops/yoroniku-tokyo/reserve">TableCheck 预约页</a>。</td>
-<td><code>7/11</code> 晚餐，接六本木 / 麻布台 / 东京塔当天最顺。</td>
-<td>TableCheck 页面已确认标题为 <code>YORONIKU TOKYO AZABUDAI HILLS</code>，且显示需要信用卡担保；可作为最后一晚 final dinner。</td>
+<td><code>7/11</code> 晚餐历史候选；当前 final dinner 已改为 Yakiniku Motoyama Shinjuku。</td>
+<td>TableCheck 页面已确认标题为 <code>YORONIKU TOKYO AZABUDAI HILLS</code>，且显示需要信用卡担保；只在 Motoyama 计划被推翻时再重新考虑。</td>
 </tr>
 <tr>
 <td>六本木</td>
@@ -3863,12 +3917,12 @@ td img.big,p img.big{max-width:100%;max-height:190px;}
 <td>-</td>
 <td>需要预约</td>
 <td>主入口：<a href="https://omakase.in/r/sh326654">OMAKASE</a>；备选：<a href="https://restaurant.ikyu.com/120456/">一休レストラン</a> / <a href="https://tabelog.com/tokyo/A1303/A130302/13265540/?cid=google_yoyaku">Tabelog</a>。</td>
-<td><code>7/8</code> 晚餐，箱根回涩谷后去恵比寿 / 代官山很近。</td>
-<td>官网和 Google 商家信息均指向 OMAKASE；价格范围约 <code>¥15,000-19,999</code>，分量大。</td>
+<td><code>7/8</code> 晚餐历史候选；当前 7/8 改为涩谷 / 惠比寿低压力晚餐 TBD。</td>
+<td>官网和 Google 商家信息均指向 OMAKASE；价格范围约 <code>¥15,000-19,999</code>，分量大。箱根回东京后不建议再锁这种硬餐。</td>
 </tr>
 </tbody>
 </table></div>
-<p>历史推荐优先级（已归档，不作为当前计划）：<code>7/11 YORONIKU TOKYO Azabudai Hills</code> &gt; <code>7/4 tens. minamiaoyama / 原 Ten. 待确认</code> &gt; <code>7/11 Bricolage brunch</code> &gt; <code>7/8 鳥焼き 小花</code> &gt; <code>7/6 Cado / 焼鳥um</code>。</p>
+<p>历史推荐优先级（已归档，不作为当前计划）：这些店都不进入当前预约优先级；<code>7/11</code> final dinner 已锁 Yakiniku Motoyama Shinjuku，<code>7/8</code> 晚餐改为低压力 TBD。</p>
 
 <h4 id="_11">待补信息</h4>
 <ul>
