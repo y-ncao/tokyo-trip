@@ -11,7 +11,8 @@ body{margin:0;background:#f6f7f5;color:var(--ink);
 .doc-nav a:hover{background:#f2efe9;color:var(--blue);text-decoration:none;}
 .doc-nav .nav-section{margin-top:10px;font-weight:700;color:#1f3a5f;}
 .doc-nav .nav-sub{padding-left:16px;font-size:12px;color:#475569;}
-.date-link code{color:var(--blue);text-decoration:underline;text-underline-offset:2px;}
+.date-link{color:var(--blue);text-decoration:underline;text-underline-offset:2px;}
+.date-link code{color:var(--blue);}
 h1{font-size:30px;border-bottom:3px solid var(--accent);padding-bottom:10px;}
 h2{font-size:22px;margin-top:36px;border-bottom:1px solid var(--line);padding-bottom:6px;color:var(--accent);}
 h3{font-size:17px;margin-top:24px;color:#1f3a5f;} h4{font-size:15px;margin-top:16px;}
@@ -4193,6 +4194,83 @@ hr{border:none;border-top:1px solid var(--line);margin:24px 0;}
   document.addEventListener("keydown", event => {
     if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
   });
+})();
+
+(() => {
+  const dayLinks = {
+    "2026-07-02": "#2026-07-02-thusfo",
+    "2026-07-03": "#2026-07-03-fri",
+    "2026-07-04": "#2026-07-04-sat",
+    "2026-07-05": "#2026-07-05-sun",
+    "2026-07-06": "#2026-07-06-mon-skytree",
+    "2026-07-07": "#2026-07-07-tue-",
+    "2026-07-08": "#2026-07-08-wed-",
+    "2026-07-09": "#2026-07-09-thu",
+    "2026-07-10": "#2026-07-10-fri",
+    "2026-07-11": "#2026-07-11-satpark-hyatt",
+    "2026-07-12": "#2026-07-12-sun-sfo"
+  };
+  const shortDayLinks = Object.fromEntries(
+    Object.entries(dayLinks).map(([date, href]) => [`7/${Number(date.slice(-2))}`, href])
+  );
+  const datePattern = /(2026-07-(?:0[2-9]|1[0-2])|7\/(?:[2-9]|1[0-2]))/g;
+
+  const sectionNodes = (startId, endId) => {
+    const start = document.getElementById(startId);
+    const end = document.getElementById(endId);
+    const nodes = [];
+    for (let node = start ? start.nextSibling : null; node && node !== end; node = node.nextSibling) {
+      nodes.push(node);
+    }
+    return nodes;
+  };
+
+  const linkDateText = text => {
+    const fragment = document.createDocumentFragment();
+    let lastIndex = 0;
+    for (const match of text.matchAll(datePattern)) {
+      const value = match[0];
+      const href = dayLinks[value] || shortDayLinks[value];
+      if (!href) continue;
+      if (match.index > lastIndex) fragment.append(text.slice(lastIndex, match.index));
+      const link = document.createElement("a");
+      link.href = href;
+      link.className = "date-link";
+      link.textContent = value;
+      fragment.append(link);
+      lastIndex = match.index + value.length;
+    }
+    if (lastIndex === 0) return null;
+    if (lastIndex < text.length) fragment.append(text.slice(lastIndex));
+    return fragment;
+  };
+
+  const linkDatesInNode = root => {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        if (!datePattern.test(node.nodeValue)) return NodeFilter.FILTER_REJECT;
+        datePattern.lastIndex = 0;
+        const parent = node.parentElement;
+        if (!parent || parent.closest("a,script,style,.doc-nav")) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    const textNodes = [];
+    while (walker.nextNode()) textNodes.push(walker.currentNode);
+    textNodes.forEach(node => {
+      const fragment = linkDateText(node.nodeValue);
+      if (fragment) node.replaceWith(fragment);
+    });
+  };
+
+  [
+    ...sectionNodes("3", "4-itinerary-proposal"),
+    ...sectionNodes("5", "6-google-map-bookmarks-tokyo"),
+    ...sectionNodes("7", "8-archive")
+  ]
+    .forEach(node => {
+      if (node.nodeType === Node.ELEMENT_NODE) linkDatesInNode(node);
+    });
 })();
 
 (() => {
